@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_delimeal/screens/categories_screen.dart';
+import 'package:my_delimeal/widgets/main_drawer.dart';
 import 'categories_screen.dart';
 import 'favorites_screen.dart';
 
@@ -29,6 +30,7 @@ class _TabsScreenState extends State<TabsScreen> {
 
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: MainDrawer(),
       appBar: AppBar(
         title: Text(_pages[_selectedPageIndex]['title']),
       ),
