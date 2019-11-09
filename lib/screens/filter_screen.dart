@@ -6,8 +6,13 @@ import 'package:flutter/material.dart';
 
    @override
    Widget build(BuildContext context) {
-     return Center(
-       child: Text('Hi!'),
+     return Scaffold(
+       appBar: AppBar(
+         title: Text('Your Filters'),
+       ),
+       body: Center(
+         child: Text('Hi!'),
+       ),
      );
    }
  }
