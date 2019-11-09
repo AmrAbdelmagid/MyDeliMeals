@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_delimeal/screens/categories_screen.dart';
 import 'package:my_delimeal/screens/category_meals_screen.dart';
 import 'package:my_delimeal/screens/meal_details_screen.dart';
+import 'package:my_delimeal/screens/tabs_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -25,8 +26,9 @@ class MyApp extends StatelessWidget {
               fontFamily: 'RobotoCondensed',
             )),
       ),
-      home: CategoriesScreen(),
+      initialRoute: '/',
       routes: {
+        '/': (context) => TabsScreen(),
         CategoryMealsScreen.routeName : (context) => CategoryMealsScreen(),
         MealDetailsScreen.routeName : (context) => MealDetailsScreen(),
       },
